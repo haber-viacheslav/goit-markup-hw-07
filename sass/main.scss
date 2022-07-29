@@ -1,4 +1,8 @@
-@import "./vars";
-
+@import "./utils/variables";
+@import "./base/modern-normalize";
+@import "./utils/reset";
+@import "./utils/wrappers";
+@import "./common/lists-titles";
 @import "./components/page-header";
 @import "./components/page-footer";
+

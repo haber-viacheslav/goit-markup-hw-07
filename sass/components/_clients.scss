@@ -1,0 +1,23 @@
+/* Our Clients */
+
+.clients__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 92px;
+	border: 1px solid $second-border-color;
+	border-radius: 4px;
+	color: $second-border-color;
+	transition: color $time-cubic, border-color $time-cubic;
+}
+
+.icon__client {
+	fill: currentColor;
+}
+
+.clients__link:hover,
+.clients__link:focus {
+	border-color: $active-color;
+	color: $active-color;
+}
