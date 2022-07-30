@@ -1,3 +1,14 @@
+
+body {
+	font-family: $main-font;
+	font-size: 14px;
+	color: $prime-color;
+	letter-spacing: 0.03em;
+}
+
+
+
+
 /* reset */
 
 h1,
@@ -44,4 +55,10 @@ img {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+
+// No-user-select!!!
+
+.no-user-select {
+	user-select: none;
 }

@@ -10,10 +10,6 @@
 	align-items: center;
 }
 
-/* .work-btn-item:not(:last-child) {
-	margin-right: 8px;
-} */
-
 .work__btn {
 	display: block;
 	padding: 6px 22px;
@@ -22,25 +18,26 @@
 	font-size: 16px;
 	line-height: 1.6;
 	text-align: center;
-	color: var(--prime-color);
-	background-color: var(--second-bg-color);
+	color: $prime-color;
+	background-color: $second-bg-color;
 	border-radius: 4px;
 	border: none;
 	cursor: pointer;
-	transition: color var(--cubic), background-color var(--time-cubic), box-shadow var(--time-cubic);
+	transition: color $time-cubic, background-color $time-cubic, box-shadow $time-cubic;
+	
+	&:hover, &:focus {
+		color: $prime-white;
+		background-color: $active-color;
+		box-shadow: $work-btn-shadow;
+	}
+	
 }
 
 .active-btn {
-	color: var(--prime-white);
-	background-color: var(--active-color);
+	color: $prime-white;
+	background-color: $active-color;
 }
 
-.work__btn:hover,
-.work__btn:focus {
-	color: var(--prime-white);
-	background-color: var(--active-color);
-	box-shadow: var(--work-btn-shadow);
-}
 
 /* Cards */
 
@@ -56,12 +53,11 @@
 
 .work-list__link {
 	display: block;
-	transition: box-shadow var(--time-cubic);
-}
+	transition: box-shadow $time-cubic;
 
-.work-list__link:hover,
-.work-list__link:focus {
-	box-shadow: var(--work-list-shadow);
+	&:hover, &:focus {
+		box-shadow: $work-list-shadow;
+	}
 }
 
 /* Work overlay */
@@ -76,14 +72,13 @@
 	width: 100%;
 	height: 100%;
 	padding: 63px 24px;
-	background-color: var(--overlay-bg-color);
+	background-color: $overlay-bg-color;
 	transform: translateY(0);
-	transition: transform var(--time-cubic);
-}
+	transition: transform $time-cubic;
 
-.work-list__link:hover .work-list__overlay,
-.work-list__link:focus .work-list__overlay {
-	transform: translateY(-100%);
+	.work-list__link:hover &, .work-list__link:focus & {
+		transform: translateY(-100%);
+	}
 }
 
 .work-list__overlay-desc {
@@ -91,7 +86,7 @@
 	font-size: 18px;
 	line-height: 1.55;
 	letter-spacing: 0.03em;
-	color: var(--prime-white);
+	color: $prime-white;
 }
 /* Changed to gap */
 /* .work-card:not(:nth-child(3n)) {
@@ -104,9 +99,9 @@
 
 .work-list__content-wrp {
 	padding: 20px 24px;
-	border-left: 1px solid var(--border-color);
-	border-right: 1px solid var(--border-color);
-	border-bottom: 1px solid var(--border-color);
+	border-left: 1px solid $border-color;
+	border-right: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
 }
 
 .work-list__title {
@@ -115,11 +110,11 @@
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
-	color: var(--prime-color);
+	color: $prime-color;
 }
 
 .work-list__descr {
 	font-size: 16px;
 	line-height: 1.88;
-	color: var(--grey-text);
+	color: $grey-text;
 }

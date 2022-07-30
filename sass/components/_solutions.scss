@@ -11,8 +11,8 @@
 	margin-right: auto;
 	max-width: 1600px;
 	height: 600px;
-	background-color: var(--prime-color);
-	background-image: var(--hero-gradient), url(../images/background/hero-bg.jpg);
+	background-color: $prime-color;
+	background-image: $hero-gradient, url(../images/background/hero-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -28,7 +28,7 @@
 	line-height: 1.36;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: var(--prime-white);
+	color: $prime-white;
 }
 
 .solutions__btn {
@@ -41,16 +41,15 @@
 	font-size: 16px;
 	line-height: 1.87;
 	letter-spacing: 0.06em;
-	color: var(--prime-white);
-	background-color: var(--active-color);
-	box-shadow: var(--solution-btn-shadow);
+	color: $prime-white;
+	background-color: $active-color;
+	box-shadow: $solution-btn-shadow;
 	border: 1px solid transparent;
 	border-radius: 4px;
 	cursor: pointer;
-	transition: background-color var(--time-cubic);
-}
+	transition: background-color $time-cubic;
 
-.solutions__btn:hover,
-.solutions__btn:focus {
-	background-color: var(--btn-accent-color);
+	&:hover, &:focus {
+		background-color: $btn-accent-color;
+	}
 }

@@ -3,25 +3,7 @@
 .header {
 	border-bottom: 1px solid $header-border-color;
 }
-/* Logo */
 
-.logo {
-	display: inline-block;
-	font-family: $second-font;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
-	color: $active-color;
-}
-
-.logo--mode-light {
-	color: $pure-black;
-}
-
-.logo--mode-dark {
-	color: $prime-white;
-}
 /* Navigation */
 
 .nav-menu,
@@ -63,6 +45,10 @@
 	padding-bottom: 32px;
 	color: $prime-color;
 	transition: color $time-cubic;
+
+	&:hover, &:focus {
+		color: $active-color;
+	}
 }
 
 .nav-menu__link--active {
@@ -79,11 +65,6 @@
 	height: 4px;
 	border-radius: 2px;
 	background-color: $active-color;
-}
-
-.nav-menu__link:hover,
-.nav-menu__link:focus {
-	color: $active-color;
 }
 
 .address-menu__item:last-child {
@@ -109,29 +90,8 @@
 	align-items: center;
 	color: $grey-text;
 	transition: color $time-cubic;
-}
 
-.address-menu__link:hover,
-.address-menu__link:focus {
-	color: $active-color;
+	&:hover, &:focus {
+		color: $active-color;
+	}
 }
-
-/* .address-menu__item:first-child::before {
-	content: "";
-	width: 16px;
-	height: 12px;
-	margin-right: 10px;
-	background-image: url(../icons/header/email.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.address-menu__item:last-child::before {
-	content: "";
-	width: 10px;
-	height: 16px;
-	margin-right: 10px;
-	background-image: url(../icons/header/smartphone.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-} */

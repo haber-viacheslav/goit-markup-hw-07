@@ -15,7 +15,7 @@
 	margin-bottom: 30px;
 	width: 270px;
 	height: 120px;
-	background-color: var(--second-bg-color);
+	background-color: $second-bg-color;
 	border-radius: 4px;
 }
 
@@ -25,13 +25,13 @@
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
-	color: var(--prime-color);
+	color: $prime-color;
 	letter-spacing: 0.03em;
 }
 
 .peculiarities__descr {
 	font-size: 14px;
 	line-height: 1.71;
-	color: var(--grey-text);
+	color: $grey-text;
 	letter-spacing: 0.03em;
 }
